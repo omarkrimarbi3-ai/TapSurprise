@@ -15,6 +15,8 @@ display:flex;
 flex-direction:column;
 }
 
+/* الصفحة الرئيسية */
+
 main{
 flex:1;
 display:flex;
@@ -25,7 +27,7 @@ text-align:center;
 padding:20px;
 }
 
-h1{
+main h1{
 font-size:100px;
 font-weight:800;
 }
@@ -36,40 +38,8 @@ margin-bottom:80px;
 color:#ccc;
 }
 
-#surpriseBtn{
-width:600px;
-height:160px;
-font-size:55px;
-font-weight:800;
-border:none;
-border-radius:50px;
-background:linear-gradient(135deg,#a855f7,#2563eb);
-color:white;
-cursor:pointer;
-box-shadow:0 0 50px #7c3aed;
-transition:.3s;
-}
+/* زر البداية */
 
-#surpriseBtn:hover{
-transform:scale(1.08);
-}
-
-
-
-footer{
-height:120px;
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
-.ads{
-width:90%;
-max-width:728px;
-height:90px;
-border:2px dashed rgba(255,255,255,.3);
-border-radius:16px;
-}
 #surpriseBtn{
 display:inline-flex;
 justify-content:center;
@@ -80,22 +50,10 @@ height:160px;
 font-size:55px;
 font-weight:800;
 color:white;
-  @keyframes pop{
-0%{
-opacity:0;
-transform:scale(.8);
-}
-100%{
-opacity:1;
-transform:scale(1);
-}
-}
-
-.showAnimation{
-animation:pop .35s ease;
-}
 background:linear-gradient(135deg,#a855f7,#2563eb);
+border:none;
 border-radius:50px;
+cursor:pointer;
 box-shadow:0 0 50px rgba(124,58,237,.6);
 transition:.3s;
 }
@@ -103,6 +61,8 @@ transition:.3s;
 #surpriseBtn:hover{
 transform:scale(1.05);
 }
+
+/* زر التالي */
 
 #nextBtn{
 display:inline-flex;
@@ -118,16 +78,15 @@ background:linear-gradient(135deg,#a855f7,#2563eb);
 border:none;
 border-radius:30px;
 cursor:pointer;
+transition:.3s;
 }
 
+#nextBtn:hover{
+transform:scale(1.05);
+}
 
-#result.show{
-opacity:1;
-transform:translateY(0);
-}
-#result{
-transition:opacity .25s ease;
-}
+/* النتيجة */
+
 #result{
 margin-top:60px;
 font-size:65px;
@@ -135,40 +94,47 @@ font-weight:800;
 max-width:1200px;
 color:white;
 opacity:1;
-transform:none;
 transition:.25s;
 }
-@media (max-width:600px){
 
-h1{
-font-size:70px;
+.showAnimation{
+animation:pop .35s ease;
 }
 
-#surpriseBtn{
-width:90%;
-height:100px;
-font-size:30px;
-border-radius:30px;
+@keyframes pop{
+0%{
+opacity:0;
+transform:scale(.8);
+}
+100%{
+opacity:1;
+transform:scale(1);
+}
 }
 
-#nextBtn{
-width:80%;
-height:70px;
-font-size:22px;
+/* الصفحات */
+
+.page{
+max-width:900px;
+margin:60px auto;
+padding:25px;
+line-height:1.9;
+text-align:right;
 }
 
-#result{
-font-size:28px;
-margin-top:40px;
-max-width:95%;
+.page h1{
+font-size:42px;
+margin-bottom:25px;
 }
 
-.tagline{
-font-size:22px;
-margin-bottom:40px;
+.page p{
+font-size:24px;
+color:#ddd;
+margin-bottom:18px;
 }
 
-}
+/* شريط التنقل */
+
 .navbar{
 display:flex;
 justify-content:center;
@@ -193,30 +159,57 @@ transition:.3s;
 background:#7c3aed;
 }
 
-.page{
-max-width:900px;
-margin:50px auto;
-padding:25px;
-line-height:1.8;
-text-align:right;
+/* الفوتر */
+
+footer{
+height:120px;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
-.page h1{
-font-size:42px;
-margin-bottom:20px;
+.ads{
+width:90%;
+max-width:728px;
+height:90px;
+border:2px dashed rgba(255,255,255,.3);
+border-radius:16px;
 }
 
-.page p{
-font-size:24px;
-color:#ddd;
-margin-bottom:15px;
-}
+/* الهواتف */
 
 @media(max-width:600px){
 
-.navbar a{
-font-size:16px;
-padding:8px 12px;
+main h1{
+font-size:70px;
+}
+
+.tagline{
+font-size:22px;
+margin-bottom:40px;
+}
+
+#surpriseBtn{
+width:90%;
+height:100px;
+font-size:30px;
+border-radius:30px;
+}
+
+#nextBtn{
+width:80%;
+height:70px;
+font-size:22px;
+}
+
+#result{
+font-size:28px;
+margin-top:40px;
+max-width:95%;
+}
+
+.page{
+padding:18px;
 }
 
 .page h1{
@@ -225,6 +218,11 @@ font-size:30px;
 
 .page p{
 font-size:18px;
+}
+
+.navbar a{
+font-size:16px;
+padding:8px 12px;
 }
 
 }
