@@ -84,7 +84,22 @@ height:140px !important;
 font-size:45px !important;
 border-radius:35px !important;
 }
+#surpriseBtn{
+background:linear-gradient(135deg,#a855f7,#2563eb) !important;
+border-radius:50px !important;
+box-shadow:0 0 40px rgba(124,58,237,.7) !important;
+letter-spacing:1px;
+transition:.3s;
+}
 
+#surpriseBtn:hover{
+transform:scale(1.08);
+box-shadow:0 0 70px rgba(124,58,237,1) !important;
+}
+
+#surpriseBtn:active{
+transform:scale(.95);
+}
 #result{
 font-size:65px !important;
 }
