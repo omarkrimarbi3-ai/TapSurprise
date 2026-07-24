@@ -28,26 +28,25 @@ padding:20px;
 }
 
 h1{
-font-size:90px;
-font-weight:800;
+font-size:120px;
 }
 
 .tagline{
-font-size:30px;
-margin-bottom:90px;
+font-size:40px;
+margin-bottom:120px;
 }
 
 #surpriseBtn{
-width:450px;
-height:120px;
-font-size:38px;
-border-radius:30px;
+width:600px;
+height:160px;
+font-size:50px;
+border-radius:40px;
 }
 
 #result{
-font-size:55px;
-max-width:1000px;
-min-height:220px;
+font-size:70px;
+max-width:1200px;
+min-height:250px;
 }
 
 footer{
