@@ -1,93 +1,68 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-    color:#fff;
-    background:linear-gradient(-45deg,#0f172a,#312e81,#6d28d9,#1e3a8a);
-    background-size:400% 400%;
-    animation:bgMove 12s ease infinite;
-}
-
-@keyframes bgMove{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+background:linear-gradient(135deg,#0f172a,#312e81,#6d28d9);
+color:white;
 }
 
 .container{
-    width:100%;
-    max-width:500px;
-    padding:40px 20px;
-    text-align:center;
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:25px;
+text-align:center;
 }
 
 .logo{
-    font-size:42px;
-    font-weight:900;
-    margin-top:30px;
-    text-shadow:0 0 20px rgba(255,255,255,.4);
+font-size:50px;
+font-weight:900;
+margin-bottom:10px;
 }
 
 .slogan{
-    margin-top:10px;
-    color:#ddd;
-    font-size:18px;
+font-size:18px;
+color:#d1d5db;
+margin-bottom:70px;
 }
 
 #surpriseBtn{
-    margin-top:90px;
-    width:100%;
-    padding:18px;
-    font-size:22px;
-    border:none;
-    border-radius:18px;
-    cursor:pointer;
-    background:#ffffff;
-    color:#4f46e5;
-    font-weight:bold;
-    transition:.3s;
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
-}
-
-#surpriseBtn:hover{
-    transform:scale(1.05);
+background:white;
+color:#4f46e5;
+border:none;
+padding:20px 40px;
+font-size:24px;
+font-weight:bold;
+border-radius:18px;
+cursor:pointer;
+margin-bottom:60px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
 }
 
 #result{
-    margin-top:40px;
-    min-height:180px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    font-size:36px;
-    font-weight:bold;
-    color:white;
-    line-height:1.5;
-    padding:20px;
-
+font-size:34px;
+font-weight:bold;
+max-width:700px;
+line-height:1.5;
+min-height:140px;
 }
 
 footer{
-    width:100%;
-    padding:20px;
-}
-
-.ads{
-    height:90px;
-    border-radius:15px;
-    border:2px dashed rgba(255,255,255,.4);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#ddd;
+height:90px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-top:1px solid rgba(255,255,255,.15);
+font-size:14px;
+color:#aaa;
 }
