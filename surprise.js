@@ -6,12 +6,6 @@ function showSurprise() {
     result.textContent = surprises[random];
 }
 
-        result.style.opacity = "1";
-
-    }, 200);
-
-}
-
 showSurprise();
 
 nextBtn.addEventListener("click", showSurprise);
