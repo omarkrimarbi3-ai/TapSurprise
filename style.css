@@ -182,9 +182,7 @@ border-radius:16px;
 @media(max-width:600px){
 
 main h1{
-font-size:56px;
-line-height:1.1;
-word-break:break-word;
+font-size:50px;
 }
 
 .tagline{
