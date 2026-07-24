@@ -3,12 +3,16 @@ const nextBtn = document.getElementById("nextBtn");
 
 function showSurprise() {
 
-    result.style.opacity = "0";
+    const random = Math.floor(Math.random() * surprises.length);
 
-    setTimeout(() => {
+    result.classList.remove("showAnimation");
 
-        const random = Math.floor(Math.random() * surprises.length);
-        result.textContent = surprises[random];
+    void result.offsetWidth;
+
+    result.textContent = surprises[random];
+
+    result.classList.add("showAnimation");
+}
 
         result.style.opacity = "1";
 
