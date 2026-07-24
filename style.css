@@ -1,47 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TapSurprise</title>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-<link rel="stylesheet" href="style.css">
-</head>
+body{
+font-family:'Poppins',sans-serif;
+background:#050816;
+background-image:
+radial-gradient(circle at 15% 20%,#7c3aed55 0%,transparent 30%),
+radial-gradient(circle at 85% 80%,#2563eb55 0%,transparent 30%);
+color:#fff;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+overflow:hidden;
+}
 
-<body>
+.blur{
+display:none;
+}
 
-<div class="blur blur1"></div>
-<div class="blur blur2"></div>
+header{
+padding-top:50px;
+text-align:center;
+}
 
-<header>
-<h1>TapSurprise</h1>
-<p>Tap. Discover. Smile.</p>
-</header>
+header h1{
+font-size:70px;
+font-weight:800;
+letter-spacing:-3px;
+text-shadow:0 0 30px rgba(255,255,255,.15);
+}
 
-<main>
+header p{
+margin-top:12px;
+font-size:22px;
+color:#c8c8d4;
+}
 
-<button id="surpriseBtn">
-🎁 Tap for Surprise
-</button>
+main{
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
 
-<h2 id="result">
-Press the button
-</h2>
+#surpriseBtn{
+width:340px;
+height:82px;
+border:none;
+border-radius:22px;
+background:linear-gradient(135deg,#8b5cf6,#6366f1);
+color:white;
+font-size:28px;
+font-weight:700;
+cursor:pointer;
+box-shadow:0 20px 50px rgba(124,58,237,.45);
+transition:.25s;
+}
 
-</main>
+#surpriseBtn:hover{
+transform:translateY(-3px) scale(1.03);
+}
 
-<footer>
+#surpriseBtn:active{
+transform:scale(.97);
+}
 
-<div class="ads"></div>
+#result{
+margin-top:70px;
+max-width:900px;
+padding:0 20px;
+font-size:42px;
+font-weight:700;
+line-height:1.5;
+text-align:center;
+min-height:180px;
+}
 
-</footer>
+footer{
+height:120px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
 
-<script src="surprises.js"></script>
-<script src="script.js"></script>
-
-</body>
-</html>
+.ads{
+width:90%;
+max-width:728px;
+height:90px;
+border:2px dashed rgba(255,255,255,.15);
+border-radius:18px;
+background:rgba(255,255,255,.03);
+backdrop-filter:blur(10px);
+}
