@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
 
 *{
 margin:0;
@@ -13,7 +13,6 @@ color:white;
 min-height:100vh;
 display:flex;
 flex-direction:column;
-overflow-x:hidden;
 }
 
 main{
@@ -23,31 +22,43 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-width:100%;
 padding:20px;
 }
 
 h1{
-font-size:120px;
+font-size:100px;
+font-weight:800;
 }
 
 .tagline{
-font-size:40px;
-margin-bottom:120px;
+font-size:35px;
+margin-bottom:80px;
+color:#ccc;
 }
 
 #surpriseBtn{
-width:650px !important;
-height:170px !important;
-font-size:55px !important;
-padding:30px !important;
-border-radius:45px !important;
-display:block;
+width:600px;
+height:160px;
+font-size:55px;
+font-weight:800;
+border:none;
+border-radius:50px;
+background:linear-gradient(135deg,#a855f7,#2563eb);
+color:white;
+cursor:pointer;
+box-shadow:0 0 50px #7c3aed;
+transition:.3s;
 }
+
+#surpriseBtn:hover{
+transform:scale(1.08);
+}
+
 #result{
-font-size:70px;
+margin-top:60px;
+font-size:65px;
+font-weight:800;
 max-width:1200px;
-min-height:250px;
 }
 
 footer{
@@ -61,52 +72,6 @@ align-items:center;
 width:90%;
 max-width:728px;
 height:90px;
-border:2px dashed rgba(255,255,255,.15);
+border:2px dashed rgba(255,255,255,.3);
 border-radius:16px;
-}
-h1,.tagline,#surpriseBtn,#result{
-position:relative;
-z-index:2;
-}
-h1{font-size:120px !important;}
-#surpriseBtn{width:600px !important;height:160px !important;font-size:50px !important;}
-#result{font-size:70px !important;}
-h1{
-font-size:100px !important;
-}
-
-.tagline{
-font-size:35px !important;
-}
-
-#surpriseBtn{
-width:500px !important;
-height:140px !important;
-font-size:45px !important;
-border-radius:35px !important;
-}
-#surpriseBtn{
-  #surpriseBtn{
-width:650px !important;
-height:170px !important;
-font-size:55px !important;
-border-radius:45px !important;
-}
-background:linear-gradient(135deg,#a855f7,#2563eb) !important;
-border-radius:50px !important;
-box-shadow:0 0 40px rgba(124,58,237,.7) !important;
-letter-spacing:1px;
-transition:.3s;
-}
-
-#surpriseBtn:hover{
-transform:scale(1.08);
-box-shadow:0 0 70px rgba(124,58,237,1) !important;
-}
-
-#surpriseBtn:active{
-transform:scale(.95);
-}
-#result{
-font-size:65px !important;
 }
