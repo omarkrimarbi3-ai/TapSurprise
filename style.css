@@ -70,6 +70,21 @@ z-index:2;
 h1{font-size:120px !important;}
 #surpriseBtn{width:600px !important;height:160px !important;font-size:50px !important;}
 #result{font-size:70px !important;}
-body{
-background:red !important;
+h1{
+font-size:100px !important;
+}
+
+.tagline{
+font-size:35px !important;
+}
+
+#surpriseBtn{
+width:500px !important;
+height:140px !important;
+font-size:45px !important;
+border-radius:35px !important;
+}
+
+#result{
+font-size:65px !important;
 }
