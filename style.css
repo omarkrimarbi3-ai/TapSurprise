@@ -110,3 +110,13 @@ border:none;
 border-radius:30px;
 cursor:pointer;
 }
+#result{
+opacity:0;
+transform:translateY(20px);
+transition:.4s;
+}
+
+#result.show{
+opacity:1;
+transform:translateY(0);
+}
