@@ -85,6 +85,12 @@ font-size:45px !important;
 border-radius:35px !important;
 }
 #surpriseBtn{
+  #surpriseBtn{
+width:650px !important;
+height:170px !important;
+font-size:55px !important;
+border-radius:45px !important;
+}
 background:linear-gradient(135deg,#a855f7,#2563eb) !important;
 border-radius:50px !important;
 box-shadow:0 0 40px rgba(124,58,237,.7) !important;
