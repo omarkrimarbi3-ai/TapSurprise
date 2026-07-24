@@ -54,12 +54,7 @@ transition:.3s;
 transform:scale(1.08);
 }
 
-#result{
-margin-top:60px;
-font-size:65px;
-font-weight:800;
-max-width:1200px;
-}
+
 
 footer{
 height:120px;
@@ -124,13 +119,7 @@ border:none;
 border-radius:30px;
 cursor:pointer;
 }
-#result{
-margin-top:60px;
-font-size:65px;
-font-weight:800;
-max-width:1200px;
-color:white;
-}
+
 
 #result.show{
 opacity:1;
@@ -138,4 +127,14 @@ transform:translateY(0);
 }
 #result{
 transition:opacity .25s ease;
+}
+#result{
+margin-top:60px;
+font-size:65px;
+font-weight:800;
+max-width:1200px;
+color:white;
+opacity:1;
+transform:none;
+transition:.25s;
 }
