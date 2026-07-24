@@ -120,3 +120,6 @@ transition:.4s;
 opacity:1;
 transform:translateY(0);
 }
+#result{
+transition:opacity .25s ease;
+}
