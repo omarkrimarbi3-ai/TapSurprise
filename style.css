@@ -1,81 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TapSurprise</title>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-body{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-background:#0b1120;
-background-image:
-radial-gradient(circle at 20% 20%,rgba(124,58,237,.35),transparent 35%),
-radial-gradient(circle at 80% 80%,rgba(59,130,246,.35),transparent 35%);
-color:#fff;
-}
+<link rel="stylesheet" href="style.css">
+</head>
 
-.container{
-flex:1;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:25px;
-text-align:center;
-}
+<body>
 
-.logo{
-font-size:52px;
-font-weight:800;
-margin-bottom:8px;
-}
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
 
-.slogan{
-color:#b8bfd3;
-font-size:17px;
-margin-bottom:60px;
-}
+<header>
+<h1>TapSurprise</h1>
+<p>Tap. Discover. Smile.</p>
+</header>
 
-#surpriseBtn{
-width:280px;
-height:70px;
-border:none;
-border-radius:18px;
-background:#7c3aed;
-color:white;
-font-size:22px;
-font-weight:700;
-cursor:pointer;
-box-shadow:0 15px 40px rgba(124,58,237,.45);
-transition:.25s;
-}
+<main>
 
-#surpriseBtn:active{
-transform:scale(.96);
-}
+<button id="surpriseBtn">
+🎁 Tap for Surprise
+</button>
 
-#result{
-margin-top:55px;
-max-width:700px;
-font-size:34px;
-font-weight:700;
-line-height:1.5;
-min-height:140px;
-}
+<h2 id="result">
+Press the button
+</h2>
 
-footer{
-height:90px;
-display:flex;
-justify-content:center;
-align-items:center;
-border-top:1px solid rgba(255,255,255,.08);
-}
+</main>
 
-.ads{
-width:320px;
-height:50px;
-}
+<footer>
+
+<div class="ads"></div>
+
+</footer>
+
+<script src="surprises.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
